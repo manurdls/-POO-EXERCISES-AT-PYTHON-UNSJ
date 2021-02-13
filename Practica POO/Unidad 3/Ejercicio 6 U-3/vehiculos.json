@@ -1,0 +1,29 @@
+{
+    "__clas__": "list",
+    "autos": [
+        {
+            "__class__": "Usado",
+            "__atributos__": {
+                "marca": "Ford",
+                "modelo": "Fiesta",
+                "cantPuertas": 5,
+                "color": "Negro",
+                "precioBase": 300000.0,
+                "patente": "JAK 123",
+                "anio": 2008,
+                "kilometraje": 100000.0
+            }
+        },
+        {
+            "__class__": "Nuevo",
+            "__atributos__": {
+                "marca": "Ford",
+                "modelo": "Focus",
+                "cantPuertas": 5,
+                "color": "Rojo",
+                "precioBase": 1200000.0,
+                "version": "Base"
+            }
+        }
+    ]
+}

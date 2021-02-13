@@ -1,0 +1,32 @@
+{
+    "__class__": "ManejadorProvincias",
+    "provincias": [
+        {
+            "__class__": "Provincia",
+            "__atributos__": {
+                "nombre": "Chubut",
+                "capital": "Rawson",
+                "cantHabitantes": "556319",
+                "cantDP": "12"
+            }
+        },
+        {
+            "__class__": "Provincia",
+            "__atributos__": {
+                "nombre": "Mendoza",
+                "capital": "Mendoza",
+                "cantHabitantes": "1231231",
+                "cantDP": "23"
+            }
+        },
+        {
+            "__class__": "Provincia",
+            "__atributos__": {
+                "nombre": "San Juan",
+                "capital": "San Juan",
+                "cantHabitantes": "738959",
+                "cantDP": "19"
+            }
+        }
+    ]
+}

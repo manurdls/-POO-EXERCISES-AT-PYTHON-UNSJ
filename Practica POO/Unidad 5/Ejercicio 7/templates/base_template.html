@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for("static", filename="css/estilo_general.css") }}">
+</head>
+<body>
+    <div id="menu" class="menu">
+        <ul>
+            {% if tipo == 'Mozo' %}
+                <li><a href="{{ url_for('registrarPedido') }}">Crear pedido</a></li>
+                <li><a href="{{ url_for('mostrarPedidosVigentes') }}">Listado de pedidos</a></li>
+            {% elif tipo == 'Cocinero' %}
+                <li><a href="{{ url_for('verPedidos') }}">Ver pedidos</a></li>
+            {% endif %}
+            <li class="salir"><a href="{{ url_for('logout') }}"><strong>Salir</strong></a></li>
+        </ul>
+    </div>
+    {% block content %}{% endblock %}
+</body>
+</html>

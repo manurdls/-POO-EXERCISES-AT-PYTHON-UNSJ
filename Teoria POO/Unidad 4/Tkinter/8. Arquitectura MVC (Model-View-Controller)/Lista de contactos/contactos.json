@@ -1,0 +1,50 @@
+{
+    "__class__": "ManejadorContactos",
+    "contactos": [
+        {
+            "__class__": "Contacto",
+            "__atributos__": {
+                "apellido": "Rueda",
+                "nombre": "Melisa",
+                "email": "melisarueda@gmail.com",
+                "telefono": "(264)4777222"
+            }
+        },
+        {
+            "__class__": "Contacto",
+            "__atributos__": {
+                "apellido": "L\u00f3pez",
+                "nombre": "Carlos",
+                "email": "carloslopez@yahoo.com",
+                "telefono": "(261)4888111"
+            }
+        },
+        {
+            "__class__": "Contacto",
+            "__atributos__": {
+                "apellido": "P\u00e9rez",
+                "nombre": "Maira",
+                "email": "mariaperez@hotmail.com",
+                "telefono": "(264)5111222"
+            }
+        },
+        {
+            "__class__": "Contacto",
+            "__atributos__": {
+                "apellido": "Altamirano",
+                "nombre": "Sandra",
+                "email": "altamiranos@microsoft.com",
+                "telefono": "(263)6478912"
+            }
+        },
+        {
+            "__class__": "Contacto",
+            "__atributos__": {
+                "apellido": "Artime",
+                "nombre": "Jorge",
+                "email": "luifa@elcomercio.com",
+                "telefono": "(264)4558699"
+            }
+        }
+    ]
+}

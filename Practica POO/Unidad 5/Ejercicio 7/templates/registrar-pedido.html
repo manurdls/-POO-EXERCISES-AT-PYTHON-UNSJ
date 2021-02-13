@@ -1,0 +1,56 @@
+{% extends "base_template.html" %}
+{% block title %}Registrar Pedido{% endblock %}
+{% block content %}
+    <div class="cntListado-Productos">
+        <label for = "productos">Productos:</label><br>
+        <table>
+            <thead>
+                <tr>
+                    <th><h1>Nombre</h1></th>
+                    <th><h1>Precio</h1></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for producto in productos %}
+                    <tr>
+                        <td><a href="{{ url_for('registrarPedido', nombre=producto.Nombre) }}">{{ producto.Nombre }}</a></td>
+                        <td>{{ producto.PrecioUnitario }}$</td>
+                    </tr>
+
+                    {% endfor %}
+
+            </tbody>
+        </table>
+    </div>
+    <div class="cntListado-Items-Pedidos">
+        {% if productos_pedidos %}
+            <label for = "items">Items del pedido:</label><br>
+            <table>
+                <thead>
+                    <tr>
+                        <th><h1>Items</h1></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for producto in productos_pedidos %}
+                        <tr>
+                            <td>{{ producto }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+    </div>
+    <div class="cntForm-Items-Pedidos">
+            <form action = "{{ request.path }}" method = "POST">
+                <label for = "observacion">Observación:</label><br>
+                <textarea name="observacion" rows="10" cols="70" placeholder="Ingrese las observaciones"></textarea><br><br>
+                <label for = "numeroMesa">Ingrese el número de la mesa:</label>
+                <input type="number" name="numMesa" min="1" max="50"/><br><br>
+                {% if error %}
+                    <p><strong>Error:</strong> {{error}} </p><br>
+                {% endif %}
+                <input class="btnFormPedido" type="submit" value="Registrar Pedido"/><br>
+            </form>
+        {% endif %}
+    </div>
+{% endblock %}

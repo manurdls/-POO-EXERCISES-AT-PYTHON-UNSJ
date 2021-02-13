@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+    {% for pedido in usuario.pedidos %}
+        <p> {{pedido.NumPedido}} </p>
+        <p> {{pedido.Fecha}} </p>
+        <p> {{pedido.Total}} </p>
+        <p> {{pedido.Cobrado}} </p>
+        <p> {{pedido.Observacion}} </p>
+        <p> {{pedido.DNIMozo}} </p>
+        <p> {{pedido.Mesa}} </p>
+        <br><br>
+    {% endfor %}
+    {% for item in pedido.items %}
+        <p> {{item.NumItem}} </p>
+        <p> {{item.NumPedido}} </p>
+        <p> {{item.NumProducto}} </p>
+        <p> {{item.Precio}} </p>
+        <p> {{item.Estado}} </p>
+        <br><br>
+    {% endfor %}
+</body>
+</html>

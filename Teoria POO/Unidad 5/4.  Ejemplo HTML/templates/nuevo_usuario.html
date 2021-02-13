@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Nuevo Usuario</h1>
+        <form action = "http://localhost:5000/bienvenida" method = "post">  # en 'action' se especifica la ruta a donde
+                                                                            # se enviará el formulario
+            <label for = "nombre">Nombre</label><br>
+            <input type = "text" name = "nombre" placeholder= "Nombre" /><br>
+            <label for = "email">Correo Electrónico</label><br>
+            <input type = "text" name = "email" placeholder= "email"/><br>
+            <label for = "password">Contraseña</label><br>
+            <input type = "password" name = "password" placeholder = "password"/><br><br>
+            <input type = "submit" value = "Guardar"/>
+            <br><br>
+        </form>
+    </body>
+</html>

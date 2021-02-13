@@ -1,0 +1,45 @@
+{% extends "base_template.html" %}
+{% block title %}Pedidos Vigentes{% endblock %}
+{% block content %}
+    <div class="cntListado-Pedidos-Vigentes">
+        {% if mensaje %}
+            <p><strong>{{ mensaje }}</strong></p>
+        {% else %}
+            <table>
+                <thead>
+                    <tr>
+                        <th><h1>Mesa</h1></th>
+                        <th><h1>DNI Mozo</h1></th>
+                        <th><h1>Items</h1></th>
+                        <th><h1></h1></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for pedido in pedidos_vigentes %}
+                        <tr>
+                            <td><h2>{{ pedido.Mesa }}</h2></td>
+                            <td><h2>{{ pedido.DNIMozo }}</h2></td>
+                            <td>
+                                {% for item in pedido.items %}
+                                    {% for producto in productos %}
+                                        {% if producto.NumProducto == item.NumProducto %}
+                                            <ul>
+                                                <li>{{ producto.Nombre }}</li>
+                                            </ul>
+                                        {% endif %}
+                                    {% endfor %}
+                                {% endfor %}
+                            </td>
+                            <td>
+                                <form action = "http://localhost:5000/inicio/cobrar-pedido" method = "POST">
+                                    <input type="hidden" name="numPedido" value="{{ pedido.NumPedido }}"/>
+                                    <input class="btnFormCobrar" type="submit" value="Cobrar"/>
+                                </form>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% endif %}
+    </div>
+{% endblock %}

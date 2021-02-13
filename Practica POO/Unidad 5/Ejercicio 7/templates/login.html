@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for("static", filename="css/estilo_login.css") }}">
+</head>
+<body>
+    <div class="login-box">
+        <h1>Ingreso</h1>
+        <form action = "{{ request.path }}" method = "post" class = "container">
+            <div class="textbox">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input type = "text" name = "DNI" placeholder="Usuario" value = "{{request.form.DNI}}"/>
+            </div>
+
+            <div class="textbox">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type = "password" name = "password" placeholder = "Contraseña"/>
+            </div>
+
+            {% if error %}
+                <div class="textbox">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                    <p><strong>Error:</strong> {{error}} </p>
+                </div>
+            {% endif %}
+
+            <input class="btn" type = "submit" value = "Ingresar" />
+        </form>
+    </div>
+</body>
+</html>

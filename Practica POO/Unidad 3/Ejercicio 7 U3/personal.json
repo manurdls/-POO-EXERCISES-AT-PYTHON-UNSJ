@@ -1,0 +1,126 @@
+{
+    "__clas__": "list",
+    "personas": [
+        {
+            "__class__": "PersonalDeApoyo",
+            "__atributos__": {
+                "nombre": "Eduardo",
+                "apellido": "Riveros",
+                "cuil": 1,
+                "sueldoBasico": 45000.0,
+                "antiguedad": 7,
+                "categoria": 22
+            }
+        },
+        {
+            "__class__": "Docente",
+            "__atributos__": {
+                "nombre": "Jorge",
+                "apellido": "Fernandez",
+                "cuil": 2,
+                "sueldoBasico": 60000.0,
+                "antiguedad": 10,
+                "carrera": "Geofisica",
+                "catedra": "Geofisica De Pozo",
+                "cargo": "Exclusivo"
+            }
+        },
+        {
+            "__class__": "Investigador",
+            "__atributos__": {
+                "nombre": "Luciana",
+                "apellido": "Rodriguez",
+                "cuil": 3,
+                "sueldoBasico": 60000.0,
+                "antiguedad": 3,
+                "area": "Informatica",
+                "tipo": "Algoritmia"
+            }
+        },
+        {
+            "__class__": "DocenteInvestigador",
+            "__atributos__": {
+                "nombre": "Mariana",
+                "apellido": "Estrada",
+                "cuil": 4,
+                "sueldoBasico": 65000.0,
+                "antiguedad": 15,
+                "carrera": "Licenciatura En Ciencias De La Computacion",
+                "catedra": "Programacion Procedural",
+                "cargo": "Exclusivo",
+                "area": "Informatica",
+                "tipo": "Redes",
+                "categoriaPrograma": "III",
+                "importeExtra": 20000.0
+            }
+        },
+        {
+            "__class__": "DocenteInvestigador",
+            "__atributos__": {
+                "nombre": "Mariano",
+                "apellido": "Orellano",
+                "cuil": 5,
+                "sueldoBasico": 40000.0,
+                "antiguedad": 8,
+                "carrera": "Geofisica",
+                "catedra": "Geofisica General",
+                "cargo": "Semiexclusivo",
+                "area": "Geofisica",
+                "tipo": "Gravimetria",
+                "categoriaPrograma": "I",
+                "importeExtra": 15000.0
+            }
+        },
+        {
+            "__class__": "DocenteInvestigador",
+            "__atributos__": {
+                "nombre": "Josefina",
+                "apellido": "Ruiz",
+                "cuil": 6,
+                "sueldoBasico": 55000.0,
+                "antiguedad": 12,
+                "carrera": "Geofisica",
+                "catedra": "Fisica 4",
+                "cargo": "Simple",
+                "area": "Geofisica",
+                "tipo": "Electromagnetismo",
+                "categoriaPrograma": "IV",
+                "importeExtra": 25000.0
+            }
+        },
+        {
+            "__class__": "DocenteInvestigador",
+            "__atributos__": {
+                "nombre": "Carlos",
+                "apellido": "Ahumada",
+                "cuil": 7,
+                "sueldoBasico": 70000.0,
+                "antiguedad": 30,
+                "carrera": "Licenciatura En Ciencias De La Computacion",
+                "catedra": "Analisis Matematico 2",
+                "cargo": "Semiexclusivo",
+                "area": "Informatica",
+                "tipo": "Algoritmia",
+                "categoriaPrograma": "I",
+                "importeExtra": 18000.0
+            }
+        },
+        {
+            "__class__": "DocenteInvestigador",
+            "__atributos__": {
+                "nombre": "Analia",
+                "apellido": "Retamal",
+                "cuil": 8,
+                "sueldoBasico": 57000.0,
+                "antiguedad": 17,
+                "carrera": "Geofisica",
+                "catedra": "Geologia General",
+                "cargo": "Exclusivo",
+                "area": "Geologia",
+                "tipo": "Rocas Igneas",
+                "categoriaPrograma": "IV",
+                "importeExtra": 25000.0
+            }
+        }
+    ]
+}

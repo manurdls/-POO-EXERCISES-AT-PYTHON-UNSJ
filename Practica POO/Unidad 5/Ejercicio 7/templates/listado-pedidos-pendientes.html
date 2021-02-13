@@ -1,0 +1,60 @@
+{% extends "base_template.html" %}
+{% block title %}Pedidos Pendientes{% endblock %}
+{% block content %}
+    <div class="cntListado-Pedidos-Pendientes">
+        {% if mensaje %}
+            <p><strong>{{ mensaje }}</strong></p><br>
+        {% else %}
+            <table>
+                <thead>
+                    <tr>
+                        <th><h1>Mesa</h1></th>
+                        <th><h1>DNI Mozo</h1></th>
+                        <th><h1>Observaciones</h1></th>
+                        <th><h1>Items</h1></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for pedido in pedidos_pendientes %}
+                        <tr>
+                            <td><p>{{ pedido.Mesa }}</p></td>
+                            <td><p>{{ pedido.DNIMozo }}</p></td>
+                            <td><p1>{{ pedido.Observacion }}</p1></td>
+                            <td>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Item</th>
+                                            <th>Estado</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    {% for item in pedido.items %}
+                                        {% for producto in productos %}
+                                            {% if producto.NumProducto == item.NumProducto %}
+                                                <tr>
+                                                    <td>{{ producto.Nombre }}</td>
+                                                    <td>{{ item.Estado }}</td>
+                                                    {% if item.Estado == 'Pendiente' %}
+                                                        <td>
+                                                            <form action = "" method = "POST">
+                                                                <input type="hidden" name="numItem" value="{{ item.NumItem }}"/>
+                                                                <input type="submit" value="Listo"/>
+                                                            </form>
+                                                        </td>
+                                                    {% else %}
+                                                        <td></td>
+                                                    {% endif %}
+                                                </tr>
+                                            {% endif %}
+                                        {% endfor %}
+                                    {% endfor %}
+                                </table>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% endif %}
+    </div>
+{% endblock %}

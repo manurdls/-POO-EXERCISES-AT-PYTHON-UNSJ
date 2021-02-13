@@ -1,0 +1,26 @@
+{
+    "__clas__": "Manejador",
+    "puntos": [
+        {
+            "__class__": "Punto",
+            "__atributos__": {
+                "x": 5,
+                "y": 5
+            }
+        },
+        {
+            "__class__": "Punto",
+            "__atributos__": {
+                "x": 7,
+                "y": 7
+            }
+        },
+        {
+            "__class__": "Punto",
+            "__atributos__": {
+                "x": 6,
+                "y": 6
+            }
+        }
+    ]
+}

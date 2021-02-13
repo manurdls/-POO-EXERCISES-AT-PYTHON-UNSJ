@@ -1,0 +1,16 @@
+body {
+    margin: 0; padding: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #464;}
+
+header { background-color: #DFB887; height: 10%; width: 100%; opacity: .9; marginbottom:
+2%;}
+
+h1 { font-family: serif; text-align: center; color: #377ba8; }
+
+.container {padding-top: 2%; width: 50%; margin: 0 auto; background-color: #DFB887;}
+
+.container label { font-weight: bold; margin-bottom: 2em; margin-left: 2em; color:
+#377ba8;}
+.container input { margin-bottom: 1em; margin-left: 2em;}
+.container button { margin-bottom: 1em; margin-left: 2em;}
+.container textarea { min-height: 12em; resize: vertical; }

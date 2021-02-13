@@ -1,0 +1,42 @@
+{% extends "base_template.html" %}
+{% block title %}Pedidos Vigentes{% endblock %}
+{% block content %}
+    {% if pedido %}
+        <div class="cntListado-Cobrar-Pedido">
+            <table>
+                <thead>
+                    <tr>
+                        <th><h1>Item</h1></th>
+                        <th><h1>Valor</h1></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in pedido.items %}
+                        <tr>
+                            {%for producto in productos %}
+                                {% if producto.NumProducto == item.NumProducto %}
+                                    <td><p>{{ producto.Nombre }}</p></td>
+                                {% endif %}
+                            {% endfor %}
+                            <td><p>{{ item.Precio }}</p></td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="cntForm-Cobrar-Pedido">
+            <table>
+                <thead>
+                    <tr>
+                        <th><h1>Total:</h1></th>
+                        <th><h1>{{pedido.Total}}$</h1></th>
+                    </tr>
+                </thead>
+            </table>
+            <form action = "" method = "POST">
+                <input type="hidden" name="confirmar" value="{{ pedido.NumPedido }}"/>
+                <br><input class="btnFormCobrarTotal" type="submit" value="Confirmar Pago"/>
+            </form>
+        </div>
+    {% endif %}
+{% endblock %}
