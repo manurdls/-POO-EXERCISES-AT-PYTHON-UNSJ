@@ -1,4 +1,3 @@
-import csv
 from claseMenu import Menu
 from cleanScreen import cleanScreen
 
