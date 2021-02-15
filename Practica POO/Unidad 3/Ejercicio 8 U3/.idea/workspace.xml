@@ -20,17 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="265b97d8-e5ce-42dc-a2dd-f0cbd9c5a898" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Unidad 2/Ejercicio-1-Unidad-2-master/.idea/Ejercicio-1-Unidad-2-master.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Unidad 2/Ejercicio-1-Unidad-2-master/cleanScreen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../claseMenu/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../claseMenu/cleanScreen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../claseMenu/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Unidad 2/Ejercicio-1-Unidad-2-master/archivo.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unidad 2/Ejercicio-1-Unidad-2-master/archivo.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Unidad 2/Ejercicio-1-Unidad-2-master/claseEmail.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unidad 2/Ejercicio-1-Unidad-2-master/claseEmail.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Unidad 2/Ejercicio-1-Unidad-2-master/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unidad 2/Ejercicio-1-Unidad-2-master/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../claseMenu/claseMenu.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../claseMenu/claseMenu.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,5 +181,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="669" y="115" key="#main/0.0.1920.1040@0.0.1920.1040" timestamp="1613264514336" />
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1613289543037">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1613289543037" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1613289543037">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1613289543037" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1613289543037">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1613289543037" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1613289543037">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1613289543037" />
   </component>
 </project>
