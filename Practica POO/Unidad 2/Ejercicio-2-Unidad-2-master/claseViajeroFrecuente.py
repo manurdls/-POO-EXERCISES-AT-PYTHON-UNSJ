@@ -1,40 +1,19 @@
-class viajeroFrecuente:
-    __idViajero: 0
-    __nombre: ''
-    __apellido: ''
-    __dni: ''
-    __millasAcumuladas= 0
 
-    def __init__(self, idV, nom, ap, dni, mill):
-        self.__idViajero = int(idV)
-        self.__nombre = nom
-        self.__apellido = ap
-        self.__dni = dni
-        self.__millasAcumuladas = int(mill)
 
-    def __str__(self):
-        return '\nEstado del objeto.\nId: {}\nNombre: {}\nApellido: {}\nDNI: {}\nMillas Acumuladas: {}'.format(
-            self.__idViajero, self.__nombre, self.__apellido, self.__dni, self.__millasAcumuladas)
+class viajeroFrecuente():
+    __id = 0
+    __name = ""
+    __surname = ""
+    __dni = ""
 
-    def cantidadTotaldeMillas(self):
-        return self.__millasAcumuladas
-
-    def acumularMillas(self, millasRecorridas):
-        if type(millasRecorridas) == int:
-            self.__millasAcumuladas += millasRecorridas
+    def  __init__(self, id, nombre, apellido, dni):
+        verificacionDatos = True
+        if verificacionDatos:
+            self.__id = id
+            self.__name = nombre
+            self.__surname = apellido
+            self.__dni = dni
         else:
-            print('ERROR: se esperaba un numero entero.')
+            raise TypeError "El formato de algún parametro de entrada es incorrecto"
 
-    def canjearMillas(self, millasAcanjear):
-        if type(millasAcanjear) == int:
-            if millasAcanjear <= self.__millasAcumuladas:
-                self.__millasAcumuladas -= millasAcanjear
-                print('Las millas se canjearon correctamente.')
-            else:
-                print('No dispone de millas suficientes para efectuar el canje.')
-        else:
-            print('ERROR: se esperaba un numero entero.')
-
-    def mostrarId(self):
-        return self.__idViajero
-
+    
