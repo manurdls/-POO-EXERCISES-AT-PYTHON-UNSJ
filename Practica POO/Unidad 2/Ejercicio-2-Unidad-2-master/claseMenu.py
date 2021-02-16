@@ -12,21 +12,23 @@ class Menu():
     def getSwitcher(self):
         return self.__switcher
 
-    def option(self, opt, manejaVF):
+    def option(self, opt, viajero):
         func = self.__switcher.get(opt, lambda: print("Opcion no valida"))
         if opt == 0:
             func()
         else:
-            func(manejaVF)
+            func(viajero)
 
     def salir(self):
         print("Fin programa")
 
-    def consultarMillas(self, manejaVF):
-        print("consultar millas")
+    def consultarMillas(self, viajero):
+        print("Millas acumuladas: {}".format(viajero.getMiles()))
 
-    def acumularMillas(self, manejaVF):
-        print("acumular millas")
+    def acumularMillas(self, viajero):
+        miles = int(input("Ingrese las millas a acumular: "))
+        viajero.acumularMiles(miles)
 
-    def canjearMillas(self, manejaVF):
-        print("canjear millas")
+    def canjearMillas(self, viajero):
+        miles = int(input("Ingrese las millas a canjear: "))
+        viajero.canjearMiles(miles)

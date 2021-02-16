@@ -18,17 +18,22 @@ class viajeroFrecuente():
         else:
             raise TypeError("El formato de algún parametro de entrada es incorrecto")
 
+    def getId(self):
+        return self.__id
+
     def getMiles(self):
         return self.__miles
 
-    def acumularMillas(self, miles):
+    def acumularMiles(self, miles):
         if isinstance(miles, int):
-            self.__miles += miles
-            print("Millas acumuladas, cantidad actual de millas: {}".format(self.getMiles()))
+            if miles > 0:
+                self.__miles += miles
+                print("Millas acumuladas, cantidad actual de millas: {}".format(self.getMiles()))
+            raise ValueError("Se esperaba un entero positivo")
         else:
             raise TypeError("Se esperaba un entero")
 
-    def canjearMillas(self, miles):
+    def canjearMiles(self, miles):
         if isinstance(miles, int):
             if miles <= self.__miles:
                 self.__miles -= miles
