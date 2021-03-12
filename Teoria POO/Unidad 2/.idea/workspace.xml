@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3e8d73e-d259-4583-8b00-8b86185f3224" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +21,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Unidad 3" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -39,9 +37,9 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="739" y="262" key="FileChooserDialogImpl" timestamp="1615239977826">
+    <state x="739" y="262" key="FileChooserDialogImpl" timestamp="1615449360006">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="739" y="262" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1615239977826" />
+    <state x="739" y="262" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1615449360006" />
   </component>
 </project>

@@ -1,49 +1,39 @@
+import csv
 
+from claseMatriz import Matriz
 
-class Cosecha:
-    __matriz = []
+class Cosecha(object):
+    __matriz: Matriz
 
-    def __init__(self,reader):
-        aux = []
+    def __init__(self):
+        self.__matriz = Matriz(20,45)
+
+    def __str__(self):
+        return self.__matriz
+
+    def cargarCosechaDesdeCSV(self, nomArchivo):
+        archivo = open(nomArchivo)
+        reader = csv.reader(archivo, delimiter=',')
+        ifila = 0
         for fila in reader:
-            aux.append(fila)
+            for i in range(len(fila)):
+                self.__matriz.setCasillero(ifila,i,int(fila[i]))
+            ifila += 1
+        archivo.close()
 
-        self.__matriz = self.calcularTranspuesta(aux)
-        self.__matriz = self.castAInt(self.__matriz)
-        #print(type(self.__matriz[0][0]))
+    def getCantidadDeKilosDescargadosDeUnCamion(self, id):
+        cosechaCamion = self.__matriz.getFila(id-1)
+        cant = 0
+        for i in range(len(cosechaCamion)):
+            cant += cosechaCamion[i]
+        return cant
 
-    def calcularTranspuesta(self, matriz):
-        transpuesta = []
-        for i in range(len(matriz[0])):
-            transpuesta.append([])
-            for j in range(len(matriz)):
-                transpuesta[i].append(matriz[j][i])
-        return transpuesta
+    def getCantidadDeKilosDescargadosEnUnDia(self, dia):
+        cosechaDia = self.__matriz.getColumna(dia-1)
+        cant = 0
+        for i in range(len(cosechaDia)):
+            cant += cosechaDia[i]
+        return cant
 
-    def castAInt(self,matriz):
-        for i in range(len(matriz)):
-            for j in range(len(matriz[i])):
-                matriz[i][j] = int(matriz[i][j])
-        return matriz
-
-    def mostrarDatos(self):
-        print(self.__matriz)
-
-    def sumarDescarga(self, id, dia, peso, tara):
-        self.__matriz[id-1][dia-1] = int(self.__matriz[id-1][dia-1]) + (peso - tara)
-        #self.mostrarDatos()
-
-    def getCosechaXCamion(self,idcamion):
-        kilos = 0
-        for i in range(len(self.__matriz[idcamion-1])):
-            kilos += int(self.__matriz[idcamion-1][i])
-        return kilos
-
-    def getCosechaXDia(self,idcamion,dia):
-        return self.__matriz[idcamion-1][dia-1]
-
-    def generaArchivo(self,salida):
-        aux = self.calcularTranspuesta(self.__matriz)
-        for i in range(len(aux)):
-            salida.writerow(aux[i])
-
+    def getCosechaEnUnDiaPorUnCamion(self, id, dia):
+        return self.__matriz.getCasillero(id-1, dia-1)
